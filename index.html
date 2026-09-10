@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Nexus: jogo web de reflexo feito com HTML, CSS e JavaScript puro.">
+  <title>Nexus — Estabilize o Sistema</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+  <header><div class="brand"><i></i>NEXUS</div><button id="sound" aria-label="Ativar ou desativar som">🔊</button></header>
+  <section class="card">
+    <div class="intro"><small>PROTOCOLO DE ESTABILIZAÇÃO</small><h1>Mantenha o núcleo online.</h1><p>Colete energia, evite interferências e alcance 20 pontos antes de perder toda a integridade.</p></div>
+    <div class="hud"><div><span>PONTOS</span><b id="score">0</b></div><div><span>INTEGRIDADE</span><b id="lives">3/3</b></div><div><span>NÍVEL</span><b id="level">1</b></div></div>
+    <div id="game" class="game" tabindex="0">
+      <div class="grid"></div><div id="player" class="player"><i></i></div>
+      <div id="overlay" class="overlay"><div class="panel"><small id="kicker">SISTEMA EM ESPERA</small><h2 id="title">Pronto para sincronizar?</h2><p id="text">Use <b>← →</b> ou <b>A / D</b>. No celular, toque ou arraste. Colete azul e dourado; desvie do vermelho.</p><button id="main">INICIAR PARTIDA</button><em>Pressione P para pausar.</em></div></div>
+      <div id="msg" class="msg"></div>
+    </div>
+    <div class="legend"><span>🔵 Sinal +1</span><span>🟡 Boost +3</span><span>🔴 Interferência −1 integridade</span></div>
+  </section>
+  <footer><span>Nexus v1.0</span><span>HTML • CSS • JavaScript</span></footer>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
